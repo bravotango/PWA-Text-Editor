@@ -13,6 +13,7 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
+      index: ['babel-polyfill', './src/js/index.js'],
     },
     output: {
       filename: '[name].bundle.js',
@@ -21,12 +22,32 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
+        title: 'Jate',
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
+        swDest: './src-sw.js',
       }),
       new WebpackPwaManifest({
-        // TODO: Create a manifest.json:
+        inject: true,
+        ios: {
+          'apple-mobile-web-app-title': 'AppTitle',
+          'apple-mobile-web-app-status-bar-style': 'pink',
+        },
+        name: 'BTs - University of Washington - Progressive Web Application',
+        short_name: 'BTs - UW - PWA',
+        description: 'Never lose your connection',
+        background_color: 'pink',
+        theme_color: 'purple',
+        start_url: '/',
+        publicPath: '/',
+        icons: [
+          {
+            src: path.resolve('src/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
+          },
+        ],
       }),
       new MiniCssExtractPlugin(),
     ],
@@ -49,6 +70,10 @@ module.exports = () => {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
+              plugins: [
+                '@babel/plugin-proposal-object-rest-spread',
+                '@babel/transform-runtime',
+              ],
             },
           },
         },
