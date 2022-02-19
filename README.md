@@ -8,7 +8,7 @@ This text editor is storing data to an IndexedDB database, uses a package called
 
 This full-stack application is deployed to Heroku [Heroku https://jate-pwa-text-editor.herokuapp.com/](https://jate-pwa-text-editor.herokuapp.com/).
 
-## User Story
+## User story
 
 ```md
 AS A developer
@@ -17,7 +17,7 @@ I WANT to create notes or code snippets with or without an internet connection
 SO THAT I can reliably retrieve them for later use
 ```
 
-## Satisfied Acceptance Criteria
+## Satisfied acceptance criteria
 
 ```md
 GIVEN a text editor web application
