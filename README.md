@@ -59,6 +59,6 @@ WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 ```
 
-## Deployed application
+## Deployed Application
 
 [https://jate-pwa-text-editor.herokuapp.com/](https://jate-pwa-text-editor.herokuapp.com/)
