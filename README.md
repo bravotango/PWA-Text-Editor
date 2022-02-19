@@ -59,62 +59,6 @@ WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 ```
 
-## Mock-Up
-
-The following animation demonstrates the application functionality:
-
-![Demonstration of the finished Unit 19 Homework being used in the browser and then installed.](./Assets/00-demo.gif)
-
-The following image shows the application's `manifest.json` file:
-
-![Demonstration of the finished Unit 19 Homework with a manifest file in the browser.](./Assets/01-manifest.png)
-
-The following image shows the application's registered service worker:
-
-![Demonstration of the finished Unit 19 Homework with a registered service worker in the browser.](./Assets/02-service-worker.png)
-
-The following image shows the application's IndexedDB storage:
-
-![Demonstration of the finished Unit 19 Homework with a IndexedDB storage named 'jate' in the browser.](./Assets/03-idb-storage.png)
-
-## Grading Requirements
-
-This homework is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-- Satisfies all of the above acceptance criteria plus the following:
-
-  - Uses IndexedDB to create an object store and includes both GET and PUT methods
-
-  - The application works without an internet connection
-
-  - Automatically saves content inside the text editor when the DOM window is unfocused
-
-  - Bundled with webpack
-
-  - Create a service worker with workbox that Caches static assets
-
-  - The application should use babel in order to use async / await
-
-  - Application must have a generated `manifest.json` using the `WebpackPwaManifest` plug-in
-
-  - Can be installed as a Progressive Web Application
-
-### Deployment: 32%
-
-- Application deployed to Heroku at live URL with build scripts
-
-- Application GitHub URL submitted
-
-### Application Quality: 15%
-
-- Application resembles the mock-up functionality provided in the homework instructions
-
 ## Deployed application
 
-- The URL of the deployed application: [https://jate-pwa-text-editor.herokuapp.com/](https://jate-pwa-text-editor.herokuapp.com/)
-
----
-
-© BTgraphix.com
+[https://jate-pwa-text-editor.herokuapp.com/](https://jate-pwa-text-editor.herokuapp.com/)
